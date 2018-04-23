@@ -1,7 +1,11 @@
-## 概要
+## About
 
 Pivotal Tracker の通知をよりリッチに Slack に送るためのものです。
 Description の更新時に Diff を表示したり、タスク系の通知ができるようになります。
+
+## Environment
+
+- Cloud Functions
 
 ## Usage
 
@@ -13,6 +17,8 @@ Description の更新時に Diff を表示したり、タスク系の通知が�
 }
 ```
 
-## 動作環境
+## Deploy Command
 
-- Cloud Functions
+```
+$ gcloud functions deploy pivotalDiffNotification --trigger-http
+```
